@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/164.da7624ee.chunk.css","mappings":"AAAA,eAEE,YADA,UACA,CACA,sBAEE,YADA,UACA","sources":["pages/ActivateAccount/common/LiveMeeting/LiveMeeting.scss"],"sourcesContent":[".live__meeting {\n  width: 100%;\n  height: 100%;\n  iframe {\n    width: 100%;\n    height: 90vh;\n  }\n}\n"],"names":[],"sourceRoot":""}
