@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { connect } from "react-redux";
-import API from "../../../../shared/axios";
-import { showError } from "../../../../redux/actions/shared";
-import { START_LOADING, STOP_LOADING } from "../../../../redux/actions/types";
+import API from "../../../shared/axios";
+import { showError } from "../../../redux/actions/shared";
+import { START_LOADING, STOP_LOADING } from "../../../redux/actions/types";
 import CircularProgress from "@mui/material/CircularProgress";
 
 import "./LiveMeeting.scss";
