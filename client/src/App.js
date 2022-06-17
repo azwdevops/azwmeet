@@ -10,9 +10,10 @@ import { get_user } from "./redux/actions/auth";
 import Header from "./components/common/Header/Header";
 import Sidebar from "./components/common/Sidebar/Sidebar";
 import { hideNavBar } from "./shared/scripts";
+import TestMeeting from "./pages/common/LiveMeeting/TestMeeting";
 const Meetings = lazy(() => import("./pages/SystemAdmin/Meetings/Meetings"));
 const LiveMeeting = lazy(() =>
-  import("./pages/ActivateAccount/common/LiveMeeting/LiveMeeting")
+  import("./pages/common/LiveMeeting/LiveMeeting")
 );
 
 const PrivateRoute = lazy(() => import("./shared/PrivateRoute"));
@@ -67,6 +68,7 @@ function App() {
                 path="/user/activate/:activation_token/"
                 element={<ActivateAccount />}
               />
+              <Route exact path="/test-meeting/" element={<TestMeeting />} />
               {/* authenticated routes */}
               <Route exact path="/" element={<PrivateRoute />}>
                 <Route exact path="/profile" element={<Profile />} />
